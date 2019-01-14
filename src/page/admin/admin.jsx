@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
 
-export default class Login extends Component {
+export default class Admin extends Component {
 
     render() {
         return (
             <div>
-                Login的页面
+                Admin的页面
             </div>
         )
     }
