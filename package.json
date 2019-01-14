@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
   "dependencies": {
     "abab": "^2.0.0",
     "accepts": "^1.3.5",
@@ -1266,7 +1260,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
@@ -1278,5 +1275,11 @@
   "bugs": {
     "url": "https://github.com/xing0/react_atguigu_pro/issues"
   },
-  "homepage": "https://github.com/xing0/react_atguigu_pro#readme"
+  "homepage": "https://github.com/xing0/react_atguigu_pro#readme",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
