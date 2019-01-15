@@ -1,11 +1,10 @@
-/*
-* 入口函数
-* */
-
-import React from "react";
-import {render} from 'react-dom'
+import React from 'react'
+import ReactDOM,{Component} from 'react-dom'
 import App from './app'
 
 
+ReactDOM.render(<App/>,document.getElementById('root'))
 
-render(<App/>,document.getElementById('root'))
+
+
+

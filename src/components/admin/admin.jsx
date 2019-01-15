@@ -5,7 +5,7 @@ export default class Admin extends Component {
     render() {
         return (
             <div>
-                Admin的页面
+                admin
             </div>
         )
     }
