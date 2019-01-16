@@ -1,5 +1,5 @@
 
 //*在内存中保存localscorage*/
-export default class momoryUtils {
+export default class MomoryUtils {
     static user = ''
 }

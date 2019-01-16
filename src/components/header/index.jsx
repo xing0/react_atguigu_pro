@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
-
-export default class header extends Component {
+import './header.less'
+export default class Header extends Component {
 
     render() {
         return (
-            <div>
+            <div className="header">
                 header
             </div>
         )

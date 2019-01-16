@@ -5,7 +5,8 @@ import './index.less'
 import logo from '../../image/logo.png'
 import {loginAjax} from '../../api'
 import {saveUser} from '../../utils/localStorage'
-import momUtils from '../../utils/momoryUtils'
+import MomUtils from '../../utils/MomoryUtils'
+import {Redirect} from "react-router-dom";
 const {Item} = Form
 
 
@@ -18,8 +19,8 @@ export default class login extends Component {
         const result = await loginAjax(value)
         console.log(result);
         if(result.status===0){ //登陆成功 写入内存
-            momUtils.user=saveUser(result.data);
-            console.log(momUtils.user);
+            MomUtils.user=saveUser(result.data);
+            console.log(MomUtils.user);
             this.props.history.replace('/')
         }else{ //登陆失败 提示失败信息
             console.log(result.msg);
@@ -32,6 +33,10 @@ export default class login extends Component {
 
 
     render() {
+        if(MomUtils.user){
+            return <Redirect to="/"/>
+        }
+
         const {errorMsg} = this.state
         return (
             <div className="login">

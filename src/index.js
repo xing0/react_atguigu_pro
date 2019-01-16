@@ -6,14 +6,11 @@ import React from "react";
 import {render} from 'react-dom'
 import App from './app'
 import {getUser} from './utils/localStorage'
-import momory from './utils/momoryUtils'
+import Momory from './utils/MomoryUtils'
 
-
-if(!(momory.user=getUser())){ //如果local为空  则跳转至login
-    console.log(1);
-
-}else{//如果local有值  则显示admin
-    console.log(2);
+const user  = getUser()
+if(user && user._id){
+    Momory.user = user
 }
 
 // import  App from  './src(1)/App'  //测试别人的项目
