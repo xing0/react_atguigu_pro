@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
 
-export default class Charts  extends Component {
+export default class Pie  extends Component {
 
     render() {
         return (
             <div>
-                charts.jsx
+                Pie
             </div>
         )
     }
