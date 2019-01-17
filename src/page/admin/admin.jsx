@@ -30,11 +30,10 @@ export default class Admin extends Component {
                         <NavLeft/>
                     </div>
                 </Col>
-
                 <Col span={20} className="main">
-                    <div>
                         <Header/>
-                        <Switch>
+                    <div className="content">
+                     <Switch>
                             <Route path='/home' component={Home} />
                             <Route path='/category' component={Category} />
                             <Route path='/charts/pie' component={Pie} />
@@ -45,9 +44,11 @@ export default class Admin extends Component {
                             <Route path='/user' component={User} />
                              <Redirect to="/home"/>
                         </Switch>
-                        <Foot/>
                     </div>
+
+                    <Foot/>
                 </Col>
+
             </Row>
         )
     }

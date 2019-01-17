@@ -15,7 +15,7 @@ class Nav_left extends Component {
     // }
     componentWillMount =()=>{
         this.menu = this.getMenu(menuList)
-        console.log(this.menu);
+        // this.defaultOpenKeys =
     }
 
     getMenu = (menuList)=>{
@@ -46,7 +46,6 @@ class Nav_left extends Component {
 
     render() {
         const path = this.props.location.pathname
-        console.log(path);
         return (
             <div className="left-nav">
                 <NavLink to="/home" className="logo">
@@ -56,7 +55,7 @@ class Nav_left extends Component {
 
                 <Menu
                         defaultSelectedKeys={[path]}
-                        // defaultOpenKeys={['/products']}
+                        defaultOpenKeys={['/products']}
                         mode="inline"
                         theme="dark"
                     >

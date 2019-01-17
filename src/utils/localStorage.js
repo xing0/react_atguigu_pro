@@ -9,7 +9,9 @@ export function saveUser(user) {
 export function getUser() {
     return store.get(UESR_KEY)
 }
-
 export function removeUser() {
     return store.remove(UESR_KEY)
+}
+export function clearAll() {
+    return store.clearAll(UESR_KEY)
 }
