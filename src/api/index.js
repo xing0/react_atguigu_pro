@@ -33,7 +33,8 @@ export function getWeather(city) {
 
 export const  getCategory = (parentId=0) =>ajax(`/manage/category/list`,{parentId})
 
-export const addCategory = (categoryName,parentId=0) => ajax(`/manage/category/add`,{categoryName,parentId},'post')
+// export const addCategory = (categoryName,parentId=0) => ajax(`/manage/category/add`,{categoryName,parentId},'post')
+export const addCategory = (category) => ajax(`/manage/category/add`,category,'post')
 
 
 export const upCategory =(categoryName,parentId=0)=>ajax(`/manage/category/update`,{categoryName,parentId},'post')
